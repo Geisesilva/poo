@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        const person = {
+          name: ["Kate", "Smith"],
+          age: 32,
+          gender: "female",
+          interests: ["music", "skiing"],
+          bio() {
+            alert(
+              `${this.name[0]} ${this.name[1]} is ${this.age} years old. She likes ${
+                this.interests[0]} and ${this.interests[1]}.`,
+            );
+          },
+          greeting() {
+            alert(`Hi! I'm ${this.name[0]}.`);
+          },
+        };
+        const myDataName = 'height';
+        const myDataValue = '1.75m';
+        person[myDataName] = myDataValue;
+      </script>
+</body>
+</html>
